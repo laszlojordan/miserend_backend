@@ -57,6 +57,11 @@ Az adatforgalom a kliens és a szerver közöett egy API gateway-en (praktikusan
 Az adattárolás vagy [iCalendar](https://icalendar.org/) formátumban, vagy pedig OSM formátumban tárolná az egyes templomok mise időpontjait.
 Ez valójában az első lépés a távlati vízió felé úgy, hogy a felhasználói élmény már jelentősen javul, és a szabványos adattárolás miatt más rendszerekkel való együttműködés könnyebben lehetővé válik.
 
+### Miserend a felhőben
+Ez a hosszú távú víziónak a kiegészítése.
+Az esemény után merült fel ötletként, hogy a miserend.hu felhős alkalmazásként teljesen serverless módon működhetne. És vélhetően az üzemeltetés így lenne a legolcsóbb. 
+Ennek bizonyítására szükség lenne egy tanulmánymunkára. Amennyiben a typescript service-ek a hosszú távú vision-ben több rétegre választják szét a megvalósítást (controller és service layer), a felhősítést serverless erőforrásokkal már gyerekjáték megvalósítani.
+
 ## Együttműködés más rendszerekkel (3rd party integration)
 ### <a id="chapter-szentsegimadas></a>Együttműködés szentségimádás szervező programmal
 A távlati vízióhoz hozzátartozik a szentségimádásokat szervező szoftverrel való együttműködés. A következőkben szentsegimadas.hu-ként hivatkozom erre a szoftverre, bár nem biztos, hogy ezen a domain-en fog futni.
@@ -67,11 +72,6 @@ Az authentikációt nem beszéltük meg. Két lehetőséget látok:
 
 ### Templomok meglévő google calendar-janak integralasa a miserend.hu-ra
 Sok templomnak létezik meglévő eseménynaptára. Sok esetben google calendar alapon. Ezeket az adatokat export-álva egy végponton keresztül be tudjuk illeszteni a saját adatbázisunkba. 
-
-### Miserend a felhőben
-Ez a hosszú távú víziónak a kiegészítése.
-Az esemény után merült fel ötletként, hogy a miserend.hu felhős alkalmazásként teljesen serverless módon működhetne. És vélhetően az üzemeltetés így lenne a legolcsóbb. 
-Ennek bizonyítására szükség lenne egy tanulmánymunkára. Amennyiben a typescript service-ek a hosszú távú vision-ben több rétegre választják szét a megvalósítást (controller és service layer), a felhősítést serverless erőforrásokkal már gyerekjáték megvalósítani.
 
 ## Hackathon projekt
 A II. Szent József Hackathon-on a rövid távú vízió irányába indultunk el.
